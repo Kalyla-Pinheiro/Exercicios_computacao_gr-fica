@@ -23,3 +23,4 @@
 ![image](https://github.com/user-attachments/assets/1b66c611-6006-4bbe-bb8a-98d10ac9b9ab)
 
 ### 4 - Desenvolver um procedimento em pseudo-código ou português estruturado para plotar um segmento de reta paralela ao eixo das abscissas, considerando o ponto inicial (Pi) dado e como tamano de segmento de reta 40 posições.
+nesse ele não pede o ponto final. Então será lido só o pontto inicial e com isso irá percorrer 40 posições e a última será dada como ponto final
