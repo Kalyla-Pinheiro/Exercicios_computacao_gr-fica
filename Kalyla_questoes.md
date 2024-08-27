@@ -13,7 +13,8 @@
 ## ASSUNTO : PRIMITIVAS GRÁFICAS
 
 ### 1- Desenvolver um procedimento para plotar um segmento de reta paralelo ao eixo das abcissas
-![image](https://github.com/user-attachments/assets/ef6a0f01-57ee-4f06-8692-927226cc5885)
+![image](https://github.com/user-attachments/assets/1b66c611-6006-4bbe-bb8a-98d10ac9b9ab)
+
 
 
 ### 2-  Desenvolver um procedimento em pseudo-código ou português estruturado para plotar um segmento de reta paralela ao eixo das ordenadas, considerando dois ponto dados (Pi, Pf).
