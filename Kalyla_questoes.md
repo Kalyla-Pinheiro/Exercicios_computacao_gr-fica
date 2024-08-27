@@ -15,10 +15,11 @@
 ### 1- Desenvolver um procedimento para plotar um segmento de reta paralelo ao eixo das abcissas
 ![image](https://github.com/user-attachments/assets/1b66c611-6006-4bbe-bb8a-98d10ac9b9ab)
 
-
-
 ### 2-  Desenvolver um procedimento em pseudo-código ou português estruturado para plotar um segmento de reta paralela ao eixo das ordenadas, considerando dois ponto dados (Pi, Pf).
+![image](https://github.com/user-attachments/assets/c28947c5-ee33-4b4c-afe4-bd75a061f646)
 
 ### 3 - Desenvolver um procedimento em pseudo-código ou português estruturado para plotar um segmento de reta paralela ao eixo das abscissas, considerando dois ponto dados (Pi, Pf).
+é o mesmo só devo alterar a declaração das variáveis
+![image](https://github.com/user-attachments/assets/1b66c611-6006-4bbe-bb8a-98d10ac9b9ab)
 
 ### 4 - Desenvolver um procedimento em pseudo-código ou português estruturado para plotar um segmento de reta paralela ao eixo das abscissas, considerando o ponto inicial (Pi) dado e como tamano de segmento de reta 40 posições.
