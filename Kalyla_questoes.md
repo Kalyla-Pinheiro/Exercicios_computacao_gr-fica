@@ -28,5 +28,7 @@ nesse ele não pede o ponto final. Então será lido só o pontto inicial e com 
 
 ## PROBLEMAS DO DIA 29.08.2024
 ### 1- Desenvolver um procedimento em português estruturado ou pseudocódigo para plotar um quadrado no primeiro quadrante de sistema de eixo considere que v1, v2, v3 e v4 denominados vértices serão dados pelo usuário.
+![image](https://github.com/user-attachments/assets/3a5ece85-5520-4c24-8ef9-63ff9a1cb630)
 
 ### 2- Desenvolver um procedimento em português estruturado ou pseudocódigo para plotar um retângulo no primeiro quadrante de sistema de eixo considere que v1, v2, v3 e v4 denominados vértices serão dados pelo usuário.
+![image](https://github.com/user-attachments/assets/450d5341-10ca-4c95-82a2-f37fb4374776)
