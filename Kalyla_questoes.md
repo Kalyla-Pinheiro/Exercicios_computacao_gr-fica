@@ -26,3 +26,7 @@
 nesse ele não pede o ponto final. Então será lido só o pontto inicial e com isso irá percorrer 40 posições e a última será dada como ponto final
 ![image](https://github.com/user-attachments/assets/6c6f8abb-9811-4df3-9851-e4af46eb80e4)
 
+## PROBLEMAS DO DIA 29.08.2024
+### 1- Desenvolver um procedimento em português estruturado ou pseudocódigo para plotar um quadrado no primeiro quadrante de sistema de eixo considere que v1, v2, v3 e v4 denominados vértices serão dados pelo usuário.
+
+### 2- Desenvolver um procedimento em português estruturado ou pseudocódigo para plotar um retângulo no primeiro quadrante de sistema de eixo considere que v1, v2, v3 e v4 denominados vértices serão dados pelo usuário.
