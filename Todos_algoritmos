@@ -1,0 +1,518 @@
+ # Questões só de algoritmo -> fim
+ 
+  //Questões de procedimentos
+//questão 1
+algoritmo matrizBrilho
+    inicio
+        inteiro: m,n,i,j,Y[][],ValorBrilho
+
+        leia(m,n,ValorBrilho)
+
+        enquanto i < m faça
+            equanto j < n faça
+                i + 1
+                j + 1
+                ValorBrilho <- Y[i][j] 
+                plotar(ValorBrilho)
+            fimenquanto
+        fimenquanto
+    fim
+
+//questão 2
+algoritmo policromatica
+    inicio
+        inteiro: imagemPolicromatica,r,g,b,
+
+        leia(m,n,imagemPolicromatica)
+
+        enquanto i < m faça
+            enquanto j < n faça
+                i + 1
+                j + 1
+                Y[i][j] <- R,G,B
+                imagemPolicromatica = Y[i][j]
+                plotar(Y[i][j])
+            fimenquanto
+        fimenquanto
+    
+        // criar imagens monocromaticas
+        R' <- R
+        G' <- G
+        B' <- B
+        
+        imagemRecontruida <- R',G',B'
+
+        se imagemPolicromatica = imagemRecontruida faça
+            escreva("A imagem policromatica é formada por monocromaticas")
+        fimse
+    fim
+
+//questão 3
+algoritmo caracterizar_relacoes_topologicas
+    inicio
+        inteiro: x1,x2,x3,x4,x5,x6,y1,y2,y3,y4,y5,y6
+
+        // considerando que eu tenho dois triangulos como os objetos
+
+        leia(x1,x2,x3,x4,x5,x6,y1,y2,y3,y4,y5,y6)
+
+        triangulo1<-v1v2,v2v3,v3v1
+        triangulo2<-v4v5,v5v6,v6,v4
+
+        se triangulo1 > triangulo2
+            se (y2 = y5) e (x5 > x2) então
+                    escreva("triangulo 2 está ao lado direito do triangulo 1")
+            fimse
+            se (y2 = y5) e (x5 < x2) então
+                    escreva("triangulo 2 está ao lado esquerdo do triangulo 1")
+            fimse
+        fimse
+    fim
+
+//Questões de retas paralelas
+//Questão 1
+// ele corrigiu -> considerando apenas dois pontos sem ter outros pontos entre eles
+    algoritmo segmento_retas_paralelas_abcissas
+        inicio
+            inteiro: xi,yi,xf,yf,pi,pf
+
+            leia(xi,yi,xf,yf)
+
+            se yi = yf então 
+                se xf > xi então
+                    plote(pi,pf)
+                fimse
+            fimse
+        fim   
+
+    ou
+    // acho , o prof não corrigiu -> entre pi e pf considerando pontos entre eles
+     algoritmo segmento_retas_paralelas_abcissas
+        inicio
+            inteiro: xi,yi,xf,yf,pi,pf
+
+            leia(xi,yi,xf,yf)
+
+            se yi = yf e xf > xi então 
+               para i de xi até xf faça
+                    i + 1
+                    plotar(pipf)
+                fimpara
+            fimse
+        fim  
+
+Questão 2
+algoritmo segmento_retas_paralelas_ordenadas
+        inicio
+            inteiro: xi,yi,xf,yf,pi,pf
+
+            leia(xi,yi,xf,yf)
+
+            se xi = xf então 
+                se yf > yi então
+                    plote(pipf)
+                fimse
+            fimse
+        fim   
+
+    ou
+    // acho , o prof não corrigiu -> entre pi e pf considerando pontos entre eles
+     algoritmo segmento_retas_paralelas_ordenadas
+        inicio
+            inteiro: xi,yi,xf,yf,pi,pf
+
+            leia(xi,yi,xf,yf)
+
+            se xi = xf e yf > yi então 
+               para i de yi até yf faça
+                    i + 1
+                    plotar(pipf)
+                fimpara
+            fimse
+        fim  
+//Questão 3
+algoritmo segmento_retas_paralelas_abcissas_tam_40
+    inicio
+        inteiro: xi,yi,tamanho,pi,pf
+
+        tamanho <- 40
+        leia(xi,yi)
+
+        xf <- xi + tamanho - 1
+        yf <- yi
+
+        se (yi = yf) e (xf >xi) entao
+            plotar(pipf)
+        fimse
+    fim
+
+ou 
+
+algoritmo segmento_retas_paralelas_abcissas_tam_40
+    inicio
+        inteiro: xi,yi,tamanho,pi,pf
+
+        tamanho <- 40
+        leia(xi,yi)
+
+        xf <- xi + tamanho - 1
+        yf <- yi
+
+        se (yi = yf) e (xf >xi) entao
+            para i de xi até xf faça
+                i+1
+                plotar(pipf)
+            fimpara
+        fimse
+    fim
+
+
+//Questão 4
+
+algoritmo segmento_reta_diagonal_perfeita
+        inicio
+            inteiro: xi,yi,xf,yf,pi,pf
+
+            leia(xi,yi,xf,yf)
+
+            se yf > yi então 
+                se xf > xi então
+                    plote(pi,pf)
+                fimse
+            fimse
+        fim   
+
+    ou
+    // acho , o prof não corrigiu -> entre pi e pf considerando pontos entre eles
+     algoritmo segmento_retas_paralelas_abcissas
+        inicio
+            inteiro: xi,yi,xf,yf,pi,pf
+
+            leia(xi,yi,xf,yf)
+
+            se yf > yi e xf > xi então 
+               para i de pi até pf faça
+                    i + 1
+                    plotar
+                fimpara
+            fimse
+        fim  
+
+//Questões de quadrado e retangulo
+// Questão 1
+algoritmo plotarQuadrado
+    inicio
+        inteiro: x1,y1,x2,y2,x3,y3,x4,y4,x,y,v1,v2,v3,v4
+
+        leia(x,y)
+        leia(x1,y1,x2,y2,x3,y3,x4,y4)
+
+        se x > 0 e y > 0 entao
+            se (v2-v1=v3-v4) e (v3-v2 =v4-v1) entao
+                plotar(v1v2,v2v3,v3v4,v4v1)
+            fimse
+        fimse
+    fim
+
+// Questão 2
+algoritmo plotarRetangulo
+ inicio
+        inteiro: x1,y1,x2,y2,x3,y3,x4,y4,x,y,v1,v2,v3,v4
+
+        leia(x,y)
+        leia(x1,y1,x2,y2,x3,y3,x4,y4)
+
+        se x > 0 e y > 0 entao
+            se (v2-v1=v3-v4) e (v3-v2 =v4-v1) entao
+                se v1v2 > v2v3 ou v1v2 < v2v3 entao
+                plotar(v1v2,v2v3,v3v4,v4v1)
+            fimse
+        fimse
+    fim
+
+//Questões de feixe de N retas
+// Questão 11
+algoritmo feixe_retas_abcissas
+    inicio
+        inteiro:xi,yi,xf,yf,N,d,i
+        inteiro:pi,pf
+
+            leia(xi,yi,xf,yf)
+
+            funcaoPlotarSegmentoReta
+                se yi=yf então
+                    se xf > xi então
+                        plote(pi,pf)
+                    fimse
+                fimse
+            fim funcaoPlotarSegmentoReta
+
+            leia(N)
+            enquanto i < N faça
+                leia(d)
+                yi <- yi + d
+                yf <- yi
+                funcaoPlotarSegmentoReta()
+            fimenquanto
+    fim
+
+//Questão 12
+algoritmo feixe_retas_ordenadas
+    inicio
+        inteiro:xi,yi,xf,yf,N,i,d,pi,pf
+
+        leia(xi,yi,xf,yf)
+
+        funcaoPlotarSegmentoReta
+            se xi=xf então
+                se yf > yi então
+                    plote(pi,pf)
+                fimse
+            fimse
+        fim funcaoPlotarSegmentoReta
+
+        leia(N)
+        enquanto i < N faça
+            leia(d)
+            xi <- xi + d
+            xf <- xi
+            funcaoPlotarSegmentoReta()
+        fimenquanto
+
+// Questõe de circulo
+
+// Questão 1-ok
+algoritmo setor_circular
+    inicio
+    inteiro: yi,xi,xf,yf,r,xn,yn,y
+
+    leia(xi,yi,xf,yf)
+    // 1º quadrante
+        se yi>0 e xf>0 então
+            leia(r)
+            enquanto (xn,yn) != (xf,0) faça
+                xn = +- Sqrt (r**2 - yn**2)
+                yn = +- Sqrt (r**2 - xn**2)
+                plote(xn,y)
+            fimenquanto
+        fimse    
+    fim
+
+//Questão 2
+algoritmo semi-circulo
+    inicio
+    inteiro: xi,yi,xf,yf,xn,yn,y 
+    leia(xi,yi,xf,yf)
+        se yi>= 0 e yf>=0 então
+            leia(r)
+            enquanto (xn,yn) != (xf,0) faça
+                xn = +- Sqrt (r**2 - yn**2)
+                yn = +- Sqrt (r**2 - xn**2)
+                
+                plote((xn,y),(-xn,y))
+            fimenquanto
+        fimse    
+    fim   
+
+         
+// Questões de Translation
+// Questão 1
+algoritmo mover_triangulo_isosceles
+    inicio
+    inteiro: x1,x2,x3,y1,y2,y3,v1,v2,v3,dt
+    leia(x1,x2,x3,y1,y2,y3)
+    leia(dt)
+        se v1!=v2!=v3 ou v1=v2=v3 então
+            escreva("não é isosceles")
+            senao faça
+                x2 <- x2 + dt
+                y2 <- y2 + dt
+                x3 <- x3 + dt
+                y3 <- y3 + dt
+                
+                //plote segmento de reta v1v2 - encima deles chamar procedimento de fomar segmento de reta
+                chamar procedimento de formar segmento de reta
+                plote(v1v2,v2v3,v3v1)
+        fimse 
+    fim
+// tem que fazer direto no x e y e nao no vertice
+
+// Questão 2
+algoritmo deformar_quadrado
+    inicio
+    inteiro: x1,x2,x3,y1,y2,y3,x4,y4
+
+    leia(x1,x2,x3,y1,y2,y3,x4,y4)
+    leia(dt)
+        se v1=v2=v3=v4 então
+                x2 <- x2 + dt
+                y2 <- y2 + dt
+                chamar procedimento de segmento de reta
+                    plote(v1v2,v2v3,v3v4,v4v1)
+        fimse
+    fim
+
+// Questão 3
+    algoritmo tres_movimentos
+    inicio 
+    inteiro: v1,v2,v3,dt1,dt2,dt3
+    leia(v1,v2,v3)
+
+    leia(dt1)
+    leia(dt2)
+    leia(dt3)
+
+    x2 <- x2 + dt1
+    y2 <- y2 + dt1
+    x3 <- x3 + dt1
+    y3 <- y3 + dt1
+
+    chamar o procedimento que gera o segmento de reta
+    
+    plote(v1v2,v2v3,v3v1)
+
+    x2 <- x2 + dt2
+    y2 <- y2 + dt2
+    x3 <- x3 + dt2
+    y3 <- y3 + dt2
+
+    chamar o procedimento que gera o segmento de reta
+    
+    plote(v1v2,v2v3,v3v1)
+
+    x2 <- x2 + dt3
+    y2 <- y2 + dt3
+    x3 <- x3 + dt3
+    y3 <- y3 + dt3
+
+    chamar o procedimento que gera o segmento de reta
+    
+    plote(v1v2,v2v3,v3v1)
+fim
+
+// Questão 4
+    algoritmo mover_circulo
+    inicio
+
+    inteiro: xc,yc,dt,yn,xn,r,xi,yi,xf,yf,y,i
+
+    leia(xi,yi,xf,yf,r,xc,yc)
+
+        se xc=0 e yc=0 faça
+             xc <- xc + dt
+             yc <- yc + dt
+                enquanto (xn,yn != xf,0)
+                 xn = +- Sqrt(r ** 2 - yn ** 2)
+                 yn = +- Sqrt(r ** 2 - xn ** 2)
+                 plote((xn,y),(-xn,y),(-xn,-y),(xn,-y))
+                 fimenquanto
+        fimse
+    fim
+
+// Questões sobre o movimento Scaling
+// Questão 2
+algoritmo duplicar_dimensões
+inicio
+        inteiro:xf,yf,N,S,i
+
+        S <- 2
+        leia(N)
+        se N >= 3 então 
+                enquanto i < N faça
+                    i + 1
+                    xf= xf * S 
+                    yf= yf * S 
+                    plote (xf, yf) 
+                fimenquanto
+        fimse
+    fim
+
+// Questão 3
+algoritmo reduzir_metade_dimensoes
+    inicio
+        inteiro:xf,yf,N,S,i
+
+        S <- 1/2
+        leia(N)
+        se N >= 3 então 
+                enquanto i < N faça
+                    i + 1
+                    xf= xf * S 
+                    yf= yf * S 
+                    plote (xf, yf) 
+                fimenquanto
+        fimse
+    fim
+        
+// Questão 4
+algoritmo deformar_quadrado
+    inicio 
+        inteiro:v1,v2,v3,v4
+        inteiro: x1,y1,x2,y2,x3,y3,x4,y4
+        inteiro: N,S,i
+
+        leia(x1,y1,x2,y2,x3,y3,x4,y4)
+        leia(S)
+        N <- 4 
+        se N >= 3 entao
+            enquanto i < N faça
+                i + 1
+                x1 = x1 * S
+                y1 = y1 * S
+                plote(v1v2,v2v3,v3v4,v4v1)
+            fimenquanto
+        fimse
+    fim
+
+
+//Questão 5 
+algoritmo movimento_quadrado_3_tempos
+    inicio
+        inteiro: N,T,S,i
+        inteiro: x1,x2,x3,x4,y1,y2,y3,y4
+        inteiro:v1,v2,v3,v4
+        // N é o numeros de lados
+        N <- 4
+
+        leia(x1,y1,x2,y2,x3,y3,x4,y4)
+        leia(S)
+        se N >= 3 então 
+                enquanto i < N e T < 3 faça
+                    i + 1
+                    x1= x1 * S 
+                    y1= y1 * S
+                    x2= x2 * S 
+                    y2= y2 * S 
+                    x3= x3 * S 
+                    y3= y3 * S
+                    x4= x4 * S 
+                    y4= y4 * S
+                    plote(v1v2,v2v3,v3v4,v4v1)
+                fimenquanto 
+        fimse
+    fim
+chamar3 vezes o s
+
+//Questão 6 
+algoritmo alterar_dimensoes_n_tempos
+    inicio
+        inteiro: N,Tn,S,xf,yf,T,i
+        
+        //LER QUANTIDADE DE LADOS DO POLIGONO
+        leia(N)
+        //LER QUANTIDADE DE TEMPOS QUE O FATOR DE SCALING SERÁ CHAMADO
+        leia(Tn)
+        //LER O FATOR DE SCALING
+        leia(S)
+
+        se N >= 3 então
+            enquanto i < N  e T < Tn faça
+                i + 1
+                xf= xf * S 
+                yf= yf * S 
+                plote (xf, yf) 
+            fimenquanto 
+        fimse
+    fim
+
+
