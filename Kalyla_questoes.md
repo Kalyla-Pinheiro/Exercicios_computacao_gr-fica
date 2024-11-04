@@ -79,35 +79,78 @@ algoritmo caracterizar_relacoes_topologicas
 ## DIA 20.08.2024 - 22.08.2024 
 ## ASSUNTO : PRIMITIVAS GRÁFICAS
 
-### 1- Desenvolver um procedimento em pseudocódgo para plotar um segmento de reta paralelo ao eixo das abcissas
-  algoritmo segmento_retas_paralelas_abcissas
-       
+### 5- Desenvolver um procedimento em pseudocódgo para plotar um segmento de reta paralelo ao eixo das abcissas
+algoritmo segmento_retas_paralelas_abcissas
+
         inicio
             inteiro: xi,yi,xf,yf,pi,pf
 
             leia(xi,yi,xf,yf)
 
-            se yi = yf então 
-                se xf > xi então
-                    plote(pi,pf)
-                fimse
+            se yi = yf e xf > xi então 
+               para i de xi até xf faça
+                    i + 1
+                    plotar(pipf)
+                fimpara
             fimse
-        fim   
+        fim  
+### 6-  Desenvolver um procedimento em pseudo-código ou português estruturado para plotar um segmento de reta paralela ao eixo das ordenadas, considerando dois ponto dados (Pi, Pf).
+algoritmo segmento_retas_paralelas_ordenadas
+        
+        inicio
+            inteiro: xi,yi,xf,yf,pi,pf
 
-### 2-  Desenvolver um procedimento em pseudo-código ou português estruturado para plotar um segmento de reta paralela ao eixo das ordenadas, considerando dois ponto dados (Pi, Pf).
-![image](https://github.com/user-attachments/assets/c28947c5-ee33-4b4c-afe4-bd75a061f646)
+            leia(xi,yi,xf,yf)
 
-### 3 - Desenvolver um procedimento em pseudo-código ou português estruturado para plotar um segmento de reta paralela ao eixo das abscissas, considerando dois ponto dados (Pi, Pf).
+            se xi = xf e yf > yi então 
+               para i de yi até yf faça
+                    i + 1
+                    plotar(pipf)
+                fimpara
+            fimse
+        fim  
+
+### 7 - Desenvolver um procedimento em pseudo-código ou português estruturado para plotar um segmento de reta paralela ao eixo das abscissas, considerando dois ponto dados (Pi, Pf).
 é o mesmo só devo alterar a declaração das variáveis
-![image](https://github.com/user-attachments/assets/1b66c611-6006-4bbe-bb8a-98d10ac9b9ab)
+algoritmo segmento_retas_paralelas_abcissas
+      
+        inicio
+            inteiro: xi,yi,xf,yf,pi,pf
 
-### 4 - Desenvolver um procedimento em pseudo-código ou português estruturado para plotar um segmento de reta paralela ao eixo das abscissas, considerando o ponto inicial (Pi) dado e como tamano de segmento de reta 40 posições.
-nesse ele não pede o ponto final. Então será lido só o pontto inicial e com isso irá percorrer 40 posições e a última será dada como ponto final
-![image](https://github.com/user-attachments/assets/6c6f8abb-9811-4df3-9851-e4af46eb80e4)
+            leia(xi,yi,xf,yf)
+
+            se yi = yf e xf > xi então 
+               para i de xi até xf faça
+                    i + 1
+                    plotar(pipf)
+                fimpara
+            fimse
+        fim  
+
+### 8 - Desenvolver um procedimento em pseudo-código ou português estruturado para plotar um segmento de reta paralela ao eixo das abscissas, considerando o ponto inicial (Pi) dado e como tamano de segmento de reta 40 posições.
+
+  
+    inicio
+        inteiro: xi,yi,tamanho,pi,pf
+
+        tamanho <- 40
+        leia(xi,yi)
+
+        xf <- xi + tamanho - 1
+        yf <- yi
+
+        se (yi = yf) e (xf >xi) entao
+            para i de xi até xf faça
+                i+1
+                plotar(pipf)
+            fimpara
+        fimse
+    fim
+
+## PROBLEMAS DO DIA 27.08.2024
 
 ## PROBLEMAS DO DIA 29.08.2024
 ### 1- Desenvolver um procedimento em português estruturado ou pseudocódigo para plotar um quadrado no primeiro quadrante de sistema de eixo considere que v1, v2, v3 e v4 denominados vértices serão dados pelo usuário.
-![image](https://github.com/user-attachments/assets/3a5ece85-5520-4c24-8ef9-63ff9a1cb630)
+
 
 ### 2- Desenvolver um procedimento em português estruturado ou pseudocódigo para plotar um retângulo no primeiro quadrante de sistema de eixo considere que v1, v2, v3 e v4 denominados vértices serão dados pelo usuário.
-![image](https://github.com/user-attachments/assets/450d5341-10ca-4c95-82a2-f37fb4374776)
