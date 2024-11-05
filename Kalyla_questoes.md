@@ -3,7 +3,9 @@
 ## DIA 13.08.2024 
 ## ASSUNTO : PREMISSAS GRÁFICAS
 
-### 1- Desenvovler um procedimento para mapear uma representação formal de uma matriz armazenando o valor intensidade de brilho Y associado a cada uma delas.
+## BASEADO NA ESPECIFICAÇÃO DAS PREMISSAS GRÁFICAS DESENVOLVER OS SEGUINTES PROCEDIMENTOS EM PSEUDOCÓDIGO OU PORTUGUÊS ESTRUTURADO.
+
+### 1- Desenvovler um procedimento para mapear uma representação formal de uma matriz armazenando o valor de intensidade de brilho Y associado a cada uma delas.
 
 algoritmo matrizBrilho
 
@@ -20,7 +22,7 @@ algoritmo matrizBrilho
         fimenquanto
     fim
     
-### 2- Desenvolver um procedimento para provar qe uma imagem policromática é uma relação de um conjunto de imagem monocromática.
+### 2- Desenvolver um procedimento para provar que uma imagem policromática é uma relação de um conjunto de imagem monocromática.
 algoritmo policromatica
 
     inicio
@@ -74,7 +76,7 @@ algoritmo caracterizar_relacoes_topologicas
         fimse
     fim
     
-### 4- Desenvolver uma pesquisa relacionada aos dispositivos físicos de i/o, bem como especificações físicas por dispositivos de processamento
+### 4- Desenvolver uma pesquisa relacionada aos dispositivos físicos de i/o gráficos, bem como especificações físicas por dispositivos de processamento
 
 ## DIA 20.08.2024 - 22.08.2024 
 ## ASSUNTO : PRIMITIVAS GRÁFICAS
@@ -94,7 +96,7 @@ algoritmo segmento_retas_paralelas_abcissas
                 fimpara
             fimse
         fim  
-### 6-  Desenvolver um procedimento em pseudo-código ou português estruturado para plotar um segmento de reta paralela ao eixo das ordenadas, considerando dois ponto dados (Pi, Pf).
+### 6-  Desenvolver um procedimento em pseudo-código ou português estruturado para plotar um segmento de reta paralela ao eixo das ordenadas, considerando dois pontos dados (Pi, Pf).
 algoritmo segmento_retas_paralelas_ordenadas
         
         inicio
@@ -110,8 +112,7 @@ algoritmo segmento_retas_paralelas_ordenadas
             fimse
         fim  
 
-### 7 - Desenvolver um procedimento em pseudo-código ou português estruturado para plotar um segmento de reta paralela ao eixo das abscissas, considerando dois ponto dados (Pi, Pf).
-é o mesmo só devo alterar a declaração das variáveis
+### 7 - Desenvolver um procedimento em pseudo-código ou português estruturado para plotar um segmento de reta paralela ao eixo das abscissas, considerando dois pontos dados (Pi, Pf).
 algoritmo segmento_retas_paralelas_abcissas
       
         inicio
@@ -127,7 +128,7 @@ algoritmo segmento_retas_paralelas_abcissas
             fimse
         fim  
 
-### 8 - Desenvolver um procedimento em pseudo-código ou português estruturado para plotar um segmento de reta paralela ao eixo das abscissas, considerando o ponto inicial (Pi) dado e como tamano de segmento de reta 40 posições.
+### 8 - Desenvolver um procedimento em pseudo-código ou português estruturado para plotar um segmento de reta paralela ao eixo das abscissas, considerando o ponto inicial (Pi) dado e como tamanho de segmento de reta 40 posições.
 
   
     inicio
@@ -149,8 +150,30 @@ algoritmo segmento_retas_paralelas_abcissas
 
 ## PROBLEMAS DO DIA 27.08.2024
 
+### 9- Desenvolver um procedimento em pseudocódigo ou português estruturado para plotar um segmento de reta entre dois pontos dados: Pi, Pf.Considere a possibilidade do segmento estar em uma das seguintes posições:
+#### a) Paralela ao eixo das abcissas
+#### b) Paralela ao eixo das ordenadas
+#### c) Em diagonal perfeita
+
 ## PROBLEMAS DO DIA 29.08.2024
-### 1- Desenvolver um procedimento em português estruturado ou pseudocódigo para plotar um quadrado no primeiro quadrante de sistema de eixo considere que v1, v2, v3 e v4 denominados vértices serão dados pelo usuário.
+### 10- Desenvolver um procedimento em português estruturado ou pseudocódigo para plotar um quadrado no primeiro quadrante de sistema de eixo considere que v1, v2, v3 e v4 denominados vértices serão dados pelo usuário.
 
 
-### 2- Desenvolver um procedimento em português estruturado ou pseudocódigo para plotar um retângulo no primeiro quadrante de sistema de eixo considere que v1, v2, v3 e v4 denominados vértices serão dados pelo usuário.
+### 11- Desenvolver um procedimento em português estruturado ou pseudocódigo para plotar um retângulo no primeiro quadrante de sistema de eixo considere que v1, v2, v3 e v4 denominados vértices serão dados pelo usuário.
+
+## PROBLEMAS DO DIA 05.09.2024
+### 12- Desenvolver um procedimento em pseudocódigo ou em português estruturado para plotar um feixe de N retas paralelas ao eixo das abcissas. Considere dois pontos dados Pi, Pf e uma distância d entre as retas.
+
+### 13- Desenvolver um procedimento em pseudocódigo ou em português estruturado para plotar um feixe de N retas paralelas ao eixo das oredenadas. Considere dois pontos dados Pi, Pf e uma distância d entre as retas.
+
+## QUESTÕES DO DIA 17.09.2024
+### 14- Questões de pesquisar o artigo
+#### a) Explique a relação entre inteligência artificial e o processamento digital da imagem, como usa possível solução tecnológica para o problema abordado no texto de LTA.
+#### b) Explique o que é um processo de indexação de imagem dgital utilizando coordenadas geográficas. Dê um exemplo considerando um banco de dados geográficos.
+
+## QUESTÕES DO DIA 24.09.2024
+### 15- Desenvolver um procedimento para plotar um setor circular disposto sobre o primeiro quadrante. Considere que o mesmo está centrado na origem.
+
+### 16- Desenvolver um procedimento para plotar um semi-círculo centro na origem, considere que o mesmo está disposto sobre o 1º e 2º quadrante. Utilize a técnica de simetria. Conforme preconizado por Bresenhan,20000.
+
+### 17- Explique de que forma a transposição dos eixos gráficos possibilitando a geração de objetos planos. Dê um exemplo.
