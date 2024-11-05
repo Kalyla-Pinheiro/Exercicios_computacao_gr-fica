@@ -177,3 +177,13 @@ algoritmo segmento_retas_paralelas_abcissas
 ### 16- Desenvolver um procedimento para plotar um semi-círculo centro na origem, considere que o mesmo está disposto sobre o 1º e 2º quadrante. Utilize a técnica de simetria. Conforme preconizado por Bresenhan,20000.
 
 ### 17- Explique de que forma a transposição dos eixos gráficos possibilitando a geração de objetos planos. Dê um exemplo.
+
+## QUESTÕES DO DIA 26.09.2024
+### 18- Desenvolver um procedimento para mover um triângulo isósceles a partir de uma distância de translação dada.
+
+### 19- Desenvolver um pseudocódigo ou um procedimento em português estruturado para deformar um quadrado.
+
+### 20- Desenvolver um pseudocódigo ou um procedimento em português para fazer uma sequência de três movimentos, considere para tal a mudança , das distâncias de translação.
+
+### 21- Desenvolver um pseudocódigo ou um procedimento em português para mover o círculo a partir de uma distância de translação dada.
+
